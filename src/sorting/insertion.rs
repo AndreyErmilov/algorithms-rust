@@ -1,5 +1,5 @@
 #[allow(dead_code)]
-fn insertion_sort<T>(mut values: Vec<T>) -> Vec<T>
+pub fn insertion_sort<T>(mut values: Vec<T>) -> Vec<T>
 where T: Ord {
     for i in 1..values.len() {
         for j in (0..i).rev() {
